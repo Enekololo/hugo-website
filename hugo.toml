@@ -276,8 +276,3 @@ pagination.pagerSize = 5
   [privacy.youTube]
     disable = false
     privacyEnhanced = false
-
-[roles]
-  [roles.guest]
-    weight = 0
-
