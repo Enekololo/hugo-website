@@ -2,10 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My Everything Website</title>
-    <link>https://example.org/</link>
+    <link>https://enekololo.org/</link>
     <description>Recent content on My Everything Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 May 2026 10:17:41 +0200</lastBuildDate>
+    <atom:link href="https://enekololo.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Links to My projects</title>
+      <link>https://enekololo.org/posts/links-to-project/</link>
+      <pubDate>Tue, 26 May 2026 10:17:41 +0200</pubDate>
+      <guid>https://enekololo.org/posts/links-to-project/</guid>
+      <description>&lt;h2 id=&#34;projects-&#34;&gt;Projects :&lt;/h2&gt;&#xA;&lt;p&gt;visit &lt;a href=&#34;https://github.com/Enekololo/mycss&#34;&gt;mycss&lt;/a&gt; for Material m3 expressive design !!!&lt;/p&gt;&#xA;&lt;p&gt;also visit &lt;a href=&#34;https://github.com/Enekololo/mywebsite-demo&#34;&gt;mywebsite-demo(beta)&lt;/a&gt; for &lt;em&gt;carousel&lt;/em&gt; demo !!!&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

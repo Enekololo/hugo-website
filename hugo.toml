@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://enekololo.org/'
 locale = 'en-us'
 title = 'My Everything Website'
 theme = 'ananke'
@@ -6,3 +6,9 @@ theme = 'ananke'
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[params]
+  subtitle = 'The Best Website oat'
+  [params.contact]
+    email = 'idk'
+    phone = 'idk'
