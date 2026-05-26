@@ -1,0 +1,4 @@
++++
+outputs = ['json']
+title = 'Example'
++++

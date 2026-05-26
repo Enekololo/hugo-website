@@ -47,8 +47,26 @@ pagination.pagerSize = 5
 
 [languages]
   [languages.en]
-    languageName = "English"
+    label = 'English'
+    locale = 'en-US'
+    weight = 1
     title = "Everything Everything"
+     [languages.en.pagination]
+      disableAliases = true
+      pagerSize = 10
+      path = 'page'
+
+  [languages.de]
+    contentDir = 'content/de'
+    direction = 'ltr'
+    label = 'Deutsch'
+    locale = 'de-DE'
+    title = "Everything Everything"
+    weight = 2
+    [languages.de.pagination]
+      disableAliases = true
+      pagerSize = 20
+      path = 'blatt'
 
     [languages.en.params]
       subtitle = "A simple, retro theme for Hugo"
@@ -276,3 +294,68 @@ pagination.pagerSize = 5
   [privacy.youTube]
     disable = false
     privacyEnhanced = false
+
+[sitemap]
+  changeFreq = ''
+  disable = false
+  filename = 'sitemap.xml'
+  priority = -1
+
+[outputs]
+  home = ['html', 'rss','json']
+  page = ['html']
+  rss = ['rss']
+  section = ['html', 'rss']
+  taxonomy = ['html', 'rss']
+  term = ['html', 'rss']
+
+[HTTPCache]
+  respectCacheControlNoStoreInRequest = true
+  respectCacheControlNoStoreInResponse = false
+  [HTTPCache.cache]
+    [HTTPCache.cache.for]
+      excludes = ['**']
+  [[HTTPCache.polls]]
+    disable = true
+    high = '0s'
+    low = '0s'
+    [HTTPCache.polls.for]
+      includes = ['**']
+
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+  minifyOutput = false
+  [minify.tdewolff]
+    [minify.tdewolff.css]
+      inline = false
+      precision = 0
+      version = 0
+    [minify.tdewolff.html]
+      keepComments = false
+      keepConditionalComments = false
+      keepDefaultAttrVals = true
+      keepDocumentTags = true
+      keepEndTags = true
+      keepQuotes = false
+      keepSpecialComments = true
+      keepWhitespace = false
+      templateDelims = ['', '']
+    [minify.tdewolff.js]
+      keepVarNames = false
+      precision = 0
+      version = 2022
+    [minify.tdewolff.json]
+      keepNumbers = false
+      precision = 0
+    [minify.tdewolff.svg]
+      keepComments = false
+      keepNamespaces = ['', 'x-bind']
+      precision = 0
+    [minify.tdewolff.xml]
+      keepWhitespace = false
+      precision = 0
