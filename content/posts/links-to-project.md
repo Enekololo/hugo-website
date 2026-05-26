@@ -4,6 +4,5 @@ draft = false
 title = 'Links to My projects'
 +++
 ## Projects : 
-visit [mycss](https://github.com/Enekololo/mycss) for Material [m3](https://mycss-eta.vercel.app/) expressive design !!!
+visit [mycss](https://github.com/Enekololo/mycss) for Material [m3](https://mycss-eta.vercel.app/) *expressive* design !!!
 
-also visit [mywebsite-demo(beta)](https://github.com/Enekololo/mywebsite-demo) for *carousel* demo !!!
