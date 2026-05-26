@@ -2,13 +2,245 @@ baseURL = 'https://enekololo.org/'
 locale = 'en-us'
 title = 'My Everything Website'
 theme = 'ananke'
+sectionPagesMenu = 'main'
 
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+ [caches.assets]
+    dir = ':resourceDir/_gen'
+    maxAge = -1
+  [caches.getresource]
+    dir = ':cacheDir/:project'
+    maxAge = -1
+  [caches.misc]
+    dir = ':cacheDir/:project'
+    maxAge = -1
+  [caches.modulegitinfo]
+    dir = ':cacheDir/modules'
+    maxAge = '24h'
+  [caches.modulequeries]
+    dir = ':cacheDir/modules'
+    maxAge = '24h'
+  [caches.modules]
+    dir = ':cacheDir/modules'
+    maxAge = -1
 
 [params]
   subtitle = 'The Best Website oat'
   [params.contact]
-    email = 'idk'
-    phone = 'idk'
+    email = 'eneko.lasaga@proton.me'
+    phone = '0684738407'
+
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+  [[menus.main]]
+    name = 'Projects'
+    pageRef = '/posts/links-to-project'
+    weight = 20
+  [[menus.main]]
+    name = 'My Github'
+    pre = '<i class="fa fa-heart"></i>'
+    url = 'https://github.com/Enekololo'
+    weight = 30
+
+    
+    
+[security]
+  enableInlineShortcodes = false
+  [security.exec]
+    allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^git$', '^node$', '^postcss$', '^tailwindcss$']
+    osEnv = ['(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GO\w+|(XDG_CONFIG_)?HOME|USERPROFILE|SSH_AUTH_SOCK|DISPLAY|LANG|SYSTEMDRIVE|PROGRAMDATA)$']
+  [security.funcs]
+    getenv = ['^HUGO_', '^CI$']
+  [security.http]
+    methods = ['(?i)GET|POST']
+    urls = ['(?i)^https?://[a-z0-9]', '! ^https?://\d+\.', '! (?i)localhost', '! (?i)^https?://[^/?#]*@']
+  [security.node]
+    [security.node.permissions]
+      allowAddons = ['tailwindcss']
+      allowChildProcess = ['tailwindcss']
+      allowRead = ['.']
+      allowWorker = ['tailwindcss']
+      allowWrite = []
+      disable = false
+
+[mediaTypes]
+  [mediaTypes.'application/json']
+    delimiter = '.'
+    suffixes = ['json']
+  [mediaTypes.'application/manifest+json']
+    delimiter = '.'
+    suffixes = ['webmanifest']
+  [mediaTypes.'application/octet-stream']
+    delimiter = '.'
+  [mediaTypes.'application/pdf']
+    delimiter = '.'
+    suffixes = ['pdf']
+  [mediaTypes.'application/rss+xml']
+    delimiter = '.'
+    suffixes = ['xml', 'rss']
+  [mediaTypes.'application/toml']
+    delimiter = '.'
+    suffixes = ['toml']
+  [mediaTypes.'application/wasm']
+    delimiter = '.'
+    suffixes = ['wasm']
+  [mediaTypes.'application/xml']
+    delimiter = '.'
+    suffixes = ['xml']
+  [mediaTypes.'application/yaml']
+    delimiter = '.'
+    suffixes = ['yaml', 'yml']
+  [mediaTypes.'font/otf']
+    delimiter = '.'
+    suffixes = ['otf']
+  [mediaTypes.'font/ttf']
+    delimiter = '.'
+    suffixes = ['ttf']
+  [mediaTypes.'image/avif']
+    delimiter = '.'
+    suffixes = ['avif']
+  [mediaTypes.'image/bmp']
+    delimiter = '.'
+    suffixes = ['bmp']
+  [mediaTypes.'image/gif']
+    delimiter = '.'
+    suffixes = ['gif']
+  [mediaTypes.'image/heic']
+    delimiter = '.'
+    suffixes = ['heic']
+  [mediaTypes.'image/heif']
+    delimiter = '.'
+    suffixes = ['heif']
+  [mediaTypes.'image/jpeg']
+    delimiter = '.'
+    suffixes = ['jpg', 'jpeg', 'jpe', 'jif', 'jfif']
+  [mediaTypes.'image/png']
+    delimiter = '.'
+    suffixes = ['png']
+  [mediaTypes.'image/svg+xml']
+    delimiter = '.'
+    suffixes = ['svg']
+  [mediaTypes.'image/tiff']
+    delimiter = '.'
+    suffixes = ['tif', 'tiff']
+  [mediaTypes.'image/webp']
+    delimiter = '.'
+    suffixes = ['webp']
+  [mediaTypes.'text/asciidoc']
+    delimiter = '.'
+    suffixes = ['adoc', 'asciidoc', 'ad']
+  [mediaTypes.'text/calendar']
+    delimiter = '.'
+    suffixes = ['ics']
+  [mediaTypes.'text/css']
+    delimiter = '.'
+    suffixes = ['css']
+  [mediaTypes.'text/csv']
+    delimiter = '.'
+    suffixes = ['csv']
+  [mediaTypes.'text/html']
+    delimiter = '.'
+    suffixes = ['html', 'htm']
+  [mediaTypes.'text/javascript']
+    delimiter = '.'
+    suffixes = ['js', 'jsm', 'mjs']
+  [mediaTypes.'text/jsx']
+    delimiter = '.'
+    suffixes = ['jsx']
+  [mediaTypes.'text/markdown']
+    delimiter = '.'
+    suffixes = ['md', 'mdown', 'markdown']
+  [mediaTypes.'text/org']
+    delimiter = '.'
+    suffixes = ['org']
+  [mediaTypes.'text/pandoc']
+    delimiter = '.'
+    suffixes = ['pandoc', 'pdc']
+  [mediaTypes.'text/plain']
+    delimiter = '.'
+    suffixes = ['txt']
+  [mediaTypes.'text/rst']
+    delimiter = '.'
+    suffixes = ['rst']
+  [mediaTypes.'text/tsx']
+    delimiter = '.'
+    suffixes = ['tsx']
+  [mediaTypes.'text/typescript']
+    delimiter = '.'
+    suffixes = ['ts']
+  [mediaTypes.'text/x-gotmpl']
+    delimiter = '.'
+    suffixes = ['gotmpl']
+  [mediaTypes.'text/x-sass']
+    delimiter = '.'
+    suffixes = ['sass']
+  [mediaTypes.'text/x-scss']
+    delimiter = '.'
+    suffixes = ['scss']
+  [mediaTypes.'video/3gpp']
+    delimiter = '.'
+    suffixes = ['3gpp', '3gp']
+  [mediaTypes.'video/mp4']
+    delimiter = '.'
+    suffixes = ['mp4']
+  [mediaTypes.'video/mpeg']
+    delimiter = '.'
+    suffixes = ['mpg', 'mpeg']
+  [mediaTypes.'video/ogg']
+    delimiter = '.'
+    suffixes = ['ogv']
+  [mediaTypes.'video/webm']
+    delimiter = '.'
+    suffixes = ['webm']
+  [mediaTypes.'video/x-msvideo']
+    delimiter = '.'
+    suffixes = ['avi']
+
+[versions]
+  [versions.'v1.0.0']
+    weight = 0
+
+[frontmatter]
+  date = ['date', 'publishdate', 'pubdate', 'published', 'lastmod', 'modified']
+  expiryDate = ['expirydate', 'unpublishdate']
+  lastmod = [':git', 'lastmod', 'modified', 'date', 'publishdate', 'pubdate', 'published']
+  publishDate = ['publishdate', 'pubdate', 'published', 'date']
+
+[server]
+  [[server.redirects]]
+    force = false
+    from = '/**'
+    fromRe = ''
+    status = 404
+    to = '/404.html'
+
+[privacy]
+  [privacy.disqus]
+    disable = false
+  [privacy.googleAnalytics]
+    disable = false
+    respectDoNotTrack = true
+  [privacy.instagram]
+    disable = false
+    simple = false
+  [privacy.vimeo]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.x]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.youTube]
+    disable = false
+    privacyEnhanced = false
+
+[roles]
+  [roles.guest]
+    weight = 0
