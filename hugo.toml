@@ -1,8 +1,12 @@
 baseURL = 'https://enekololo.org/'
 locale = 'en-us'
 title = 'My Everything Website'
-theme = 'ananke'
+theme = 'terminal'
 sectionPagesMenu = 'main'
+pagination.pagerSize = 5
+
+[markup.highlight]
+  noClasses = false
 
 [caches]
   [caches.images]
@@ -31,7 +35,39 @@ sectionPagesMenu = 'main'
   [params.contact]
     email = 'eneko.lasaga@proton.me'
     phone = '0684738407'
+  contentTypeName = "posts"
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 2
+  showLanguageSelector = false
+  fullWidthTheme = true
+  centerTheme = false
+  autoCover = true
+  enableGitInfo = true
+  showLastUpdated = true
 
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "Everything Everything"
+
+    [languages.en.params]
+      subtitle = "A simple, retro theme for Hugo"
+      owner = "Enekololo"
+      keywords = ""
+      copyright = ""
+      menuMore = "Show more"
+      readMore = "Read more"
+      readOtherPosts = "Read other posts"
+      newerPosts = "Newer posts"
+      olderPosts = "Older posts"
+      missingContentMessage = "Page not found..."
+      missingBackButtonLabel = "Back to home page"
+      minuteReadingTime = "min read"
+      words = "words"
+
+      [languages.en.params.logo]
+        logoText = "My Everything Website"
+        logoHomeLink = "/"
 
 [menus]
   [[menus.main]]
@@ -244,3 +280,4 @@ sectionPagesMenu = 'main'
 [roles]
   [roles.guest]
     weight = 0
+
