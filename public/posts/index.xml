@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Everything Everything</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://enekololo.org/posts/</link>
     <description>Recent content in Posts on Everything Everything</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 26 May 2026 11:48:19 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 May 2026 12:09:19 +0200</lastBuildDate>
+    <atom:link href="https://enekololo.org/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Links to My projects</title>
-      <link>http://localhost:1313/posts/links-to-project/</link>
-      <pubDate>Tue, 26 May 2026 11:48:19 +0200</pubDate>
-      <guid>http://localhost:1313/posts/links-to-project/</guid>
-      <description>&lt;h2 id=&#34;projects-&#34;&gt;Projects :&lt;/h2&gt;&#xA;&lt;p&gt;visit &lt;a href=&#34;https://github.com/Enekololo/mycss&#34;&gt;mycss&lt;/a&gt; for Material &lt;a href=&#34;https://mycss-eta.vercel.app/&#34;&gt;m3&lt;/a&gt; &lt;em&gt;expressive&lt;/em&gt; design !!!&lt;/p&gt;</description>
+      <link>https://enekololo.org/posts/links-to-project/</link>
+      <pubDate>Wed, 27 May 2026 12:09:19 +0200</pubDate>
+      <guid>https://enekololo.org/posts/links-to-project/</guid>
+      <description>&lt;h2 id=&#34;projects-&#34;&gt;Projects :&lt;/h2&gt;&#xA;&lt;p&gt;visit &lt;a href=&#34;https://github.com/Enekololo/mycss&#34;&gt;mycss&lt;/a&gt; for Material &lt;a href=&#34;https://mycss-eta.vercel.app/&#34;&gt;m3&lt;/a&gt; &lt;em&gt;expressive&lt;/em&gt; design !!!&lt;/p&gt;&#xA;&lt;h3 id=&#34;new-&#34;&gt;NEW !!!&lt;/h3&gt;&#xA;&lt;p&gt;(New) mywebsite demo has been realeased on github, to go the website click &lt;a href=&#34;https://enekololo.github.io/mywebsite-demo/&#34;&gt;here!&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Endlesshorse</title>
-      <link>http://localhost:1313/posts/endlesshorse/</link>
+      <link>https://enekololo.org/posts/endlesshorse/</link>
       <pubDate>Tue, 26 May 2026 11:29:19 +0200</pubDate>
-      <guid>http://localhost:1313/posts/endlesshorse/</guid>
+      <guid>https://enekololo.org/posts/endlesshorse/</guid>
       <description>&lt;h3 id=&#34;endless-horse-&#34;&gt;Endless Horse :&lt;/h3&gt;&#xA;&lt;p&gt;Go &lt;a href=&#34;http://endless.horse/&#34;&gt;Scroooooooooooollllll&lt;/a&gt; with Endless Horse !!!&lt;/p&gt;</description>
     </item>
   </channel>
